@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #1e293b;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 16px 6%;
+  background: #173b70;
+  color: white;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+h1 {
+  color: #173b70;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000c;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-card h1,
+.login-card > p {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 16px 0 7px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  background: white;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+form button {
+  margin-top: 18px;
+}
+
+.login-card button {
+  width: 100%;
+}
+
+.navbar button {
+  background: #dc3545;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.menu-item span {
+  text-align: right;
+}
+
+.feedback-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+  overflow-wrap: anywhere;
+}
+
+.feedback-item p {
+  margin: 10px 0;
+}
+
+.feedback-item small {
+  color: #64748b;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stats .card {
+  text-align: center;
+}
+
+.success {
+  color: #15803d;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .menu-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-item span {
+    text-align: left;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
